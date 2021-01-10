@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Core\Device\Device.csproj" />
+    <ProjectReference Include="..\..\..\Camera\CameraSpecification\CameraSpecification.csproj" />
+    <ProjectReference Include="..\..\IrCameraSpecification\IrCameraSpecification.csproj" />
+  </ItemGroup>
+
+</Project>
