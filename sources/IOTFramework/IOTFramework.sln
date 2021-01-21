@@ -25,19 +25,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLiteRepository", "Reposit
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{4F93BCC3-9C37-4DC0-9596-23FCFBCC8208}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Device", "Core\Device\Device.csproj", "{72C3AFC6-C524-4B35-AD24-A26E8C7B4581}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Device", "Core\Device\Device.csproj", "{72C3AFC6-C524-4B35-AD24-A26E8C7B4581}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vendors", "Vendors", "{A1B83CBA-C5B9-46CB-BC4A-D88C0EB2D747}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IrCamera", "IrCamera", "{3961F88D-5E4C-479C-9CE8-CB288577194A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualIrCamera", "Devices\Vendors\IrCamera\VirtualDevice\VirtualIrCamera\VirtualIrCamera.csproj", "{22ED6D24-E41E-43D3-83DD-A29B1A25AE12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualIrCamera", "Devices\Vendors\IrCamera\VirtualDevice\VirtualIrCamera\VirtualIrCamera.csproj", "{22ED6D24-E41E-43D3-83DD-A29B1A25AE12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrCameraSpecification", "Devices\Vendors\IrCamera\IrCameraSpecification\IrCameraSpecification.csproj", "{D075C206-B88B-4F9D-8A33-745E5A9C1660}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IrCameraSpecification", "Devices\Vendors\IrCamera\IrCameraSpecification\IrCameraSpecification.csproj", "{D075C206-B88B-4F9D-8A33-745E5A9C1660}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Camera", "Camera", "{1529771E-1814-4058-864A-3A2AEF9E9B57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraSpecification", "Devices\Vendors\Camera\CameraSpecification\CameraSpecification.csproj", "{495427F1-3DF5-4EB8-93CA-28194B8B313C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CameraSpecification", "Devices\Vendors\Camera\CameraSpecification\CameraSpecification.csproj", "{495427F1-3DF5-4EB8-93CA-28194B8B313C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Communication", "Communication", "{C6EEB8E7-9FCA-4A04-8EA6-8AF06CE76C60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session", "Communication\Session\Session.csproj", "{3766D704-1475-4889-AC9E-E6738F41F63B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQTT", "Communication\MQTT\MQTT.csproj", "{D93BFBB8-1A1E-40C0-98E2-F064ED6670A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +91,14 @@ Global
 		{495427F1-3DF5-4EB8-93CA-28194B8B313C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{495427F1-3DF5-4EB8-93CA-28194B8B313C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{495427F1-3DF5-4EB8-93CA-28194B8B313C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3766D704-1475-4889-AC9E-E6738F41F63B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3766D704-1475-4889-AC9E-E6738F41F63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3766D704-1475-4889-AC9E-E6738F41F63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3766D704-1475-4889-AC9E-E6738F41F63B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D93BFBB8-1A1E-40C0-98E2-F064ED6670A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93BFBB8-1A1E-40C0-98E2-F064ED6670A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93BFBB8-1A1E-40C0-98E2-F064ED6670A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93BFBB8-1A1E-40C0-98E2-F064ED6670A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +116,8 @@ Global
 		{D075C206-B88B-4F9D-8A33-745E5A9C1660} = {3961F88D-5E4C-479C-9CE8-CB288577194A}
 		{1529771E-1814-4058-864A-3A2AEF9E9B57} = {A1B83CBA-C5B9-46CB-BC4A-D88C0EB2D747}
 		{495427F1-3DF5-4EB8-93CA-28194B8B313C} = {1529771E-1814-4058-864A-3A2AEF9E9B57}
+		{3766D704-1475-4889-AC9E-E6738F41F63B} = {C6EEB8E7-9FCA-4A04-8EA6-8AF06CE76C60}
+		{D93BFBB8-1A1E-40C0-98E2-F064ED6670A0} = {C6EEB8E7-9FCA-4A04-8EA6-8AF06CE76C60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C80020D-157F-4D02-A4BC-C6C3FDEE356E}
