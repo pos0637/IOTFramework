@@ -117,8 +117,7 @@ namespace MQTT
         private async Task ConnectAsync() {
             try {
                 await mqttClient.ConnectAsync(options, cancellationToken.Token);
-            }
-            catch (Exception) {
+            } catch (Exception) {
                 Tracker.LogNW(TAG, "connect fail");
             }
         }
